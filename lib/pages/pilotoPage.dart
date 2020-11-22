@@ -24,7 +24,7 @@ class pilotoPage extends StatelessWidget {
                   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   onPressed: (){
                     Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => InfoPiloto(datos.nombrePiloto[i], datos.piloto[i], datos.numeroPiloto[i], datos.piloto[i], datos.color1[i], datos.color2[i], datos.equipoPiloto[i]),
+                      builder: (context) => InfoPiloto(datos.nombrePiloto[i], datos.piloto[i], datos.numeroPiloto[i], datos.piloto[i], datos.color1[i], datos.color2[i], datos.equipoPiloto[i], datos.biografiaPiloto[i]),
                     ));
                   },
                   child: Container(

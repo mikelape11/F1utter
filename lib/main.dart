@@ -34,7 +34,7 @@ class MaterialAppWithTheme extends StatelessWidget {
      debugShowCheckedModeBanner: false,
      home: homePage(),
      theme: theme.getTheme(),
-     routes:  {
+     routes: {
        pageRoutes.home: (context) => homePage(),
        pageRoutes.contact: (context) => contactPage(),
        pageRoutes.equipo: (context) => equipoPage(),
