@@ -47,7 +47,74 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    #Logo
     - images/f1logo2.jpg
+    - images/portada.png
+    #Pilotos y Numeros
+    - images/Pilotos/Pequeños/hamilton.png
+    - images/Pilotos/Numeros/44.png
+    - images/Pilotos/Pequeños/bottas.png
+    - images/Pilotos/Numeros/77.png
+    - images/Pilotos/Pequeños/vettel.png
+    - images/Pilotos/Numeros/5.png
+    - images/Pilotos/Pequeños/leclerc.png
+    - images/Pilotos/Numeros/16.png
+    - images/Pilotos/Pequeños/verstappen.png
+    - images/Pilotos/Numeros/33.png
+    - images/Pilotos/Pequeños/albon.png
+    - images/Pilotos/Numeros/23.png
+    - images/Pilotos/Pequeños/sainz.png
+    - images/Pilotos/Numeros/55.png
+    - images/Pilotos/Pequeños/norris.png
+    - images/Pilotos/Numeros/4.png
+    - images/Pilotos/Pequeños/ricciardo.png
+    - images/Pilotos/Numeros/3.png
+    - images/Pilotos/Pequeños/ocon.png
+    - images/Pilotos/Numeros/31.png
+    - images/Pilotos/Pequeños/gasly.png
+    - images/Pilotos/Numeros/10.png
+    - images/Pilotos/Pequeños/kvyat.png
+    - images/Pilotos/Numeros/26.png
+    - images/Pilotos/Pequeños/perez.png
+    - images/Pilotos/Numeros/11.png
+    - images/Pilotos/Pequeños/stroll.png
+    - images/Pilotos/Numeros/18.png
+    - images/Pilotos/Pequeños/raikkonen.png
+    - images/Pilotos/Numeros/7.png
+    - images/Pilotos/Pequeños/giovinazzi.png
+    - images/Pilotos/Numeros/99.png
+    - images/Pilotos/Pequeños/magnussen.png
+    - images/Pilotos/Numeros/20.png
+    - images/Pilotos/Pequeños/grosjean.png
+    - images/Pilotos/Numeros/8.png
+    - images/Pilotos/Pequeños/russell.png
+    - images/Pilotos/Numeros/63.png
+    - images/Pilotos/Pequeños/latifi.png
+    - images/Pilotos/Numeros/6.png
+    #Logo Equipos
+    - images/LogoEquipos/logomercedes.png
+    - images/LogoEquipos/logoferrari.png
+    - images/LogoEquipos/logoredbull.png
+    - images/LogoEquipos/logomclaren.png
+    - images/LogoEquipos/logorenault.png
+    - images/LogoEquipos/logoalphatauri.png
+    - images/LogoEquipos/logoracingpoint.png
+    - images/LogoEquipos/logoalfaromeo.png
+    - images/LogoEquipos/logohaas.png
+    - images/LogoEquipos/logowilliams.png
+    #Imagen Coche
+    - images/Equipos/mercedes.png
+    - images/Equipos/ferrari.png
+    - images/Equipos/redbull.png
+    - images/Equipos/mclaren.png
+    - images/Equipos/renault.png
+    - images/Equipos/alphatauri.png
+    - images/Equipos/racingpoint.png
+    - images/Equipos/alfaromeo.png
+    - images/Equipos/haas.png
+    - images/Equipos/williams.png
+    
+    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

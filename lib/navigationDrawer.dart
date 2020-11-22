@@ -50,7 +50,7 @@ class navigationDrawer extends StatelessWidget {
          Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.only(top: 300.0),
+              margin: EdgeInsets.only(top: 230.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[

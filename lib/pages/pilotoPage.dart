@@ -1,27 +1,87 @@
 import 'package:flutter/material.dart';
-
+import 'package:proyecto/model/modelo.dart';
 import '../navigationDrawer.dart';
 
 class pilotoPage extends StatelessWidget {
- static const String routeName = '/pilotoPage';
+  final Piloto datos = new Piloto();
+  static const String routeName = '/pilotoPage';
 
- @override
- Widget build(BuildContext context) {
+  @override
+  Widget build(BuildContext context) {
    return new Scaffold(
        appBar: AppBar(
-         title: Text("My piloto"),
+         title: Text("Pilotos 2020"),
        ),
        drawer: navigationDrawer(),
-       body: Center(
-         child: Column(
-           children: <Widget>[
-              Container(
-                margin: EdgeInsets.only(top: 10.0),
-                child: Text("This is piloto page")
-              ),
-           ],
-         ),
-        )
+       body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: <Widget>[
+               for(int i=0; i<20; i++)
+                FlatButton(
+                  materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                  onPressed: (){
+
+                  },
+                  child: Container(
+                  
+                  decoration: BoxDecoration(
+                    // gradient: LinearGradient(
+                    //   colors: [datos.color2[i], datos.color1[i]],
+                    //   stops: [0.1, 1]
+                    // ),
+                    border: Border(
+                      bottom: BorderSide(width: 5, color: datos.colorBorde[i]),
+                    ),
+                  ),
+                  //margin: EdgeInsets.only(top: 10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Container( //Numero Piloto
+                        width: 70,
+                        height: 40,
+                        decoration: BoxDecoration(
+                          
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image:  AssetImage('images/Pilotos/Numeros/${datos.numeroPiloto[i]}.png')
+                          )
+                        ),
+                      ),
+                      Container( //Imagen Piloto
+                        width: 70,
+                        height: 70,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image:  AssetImage('images/Pilotos/Pequeños/${datos.piloto[i]}.png') 
+                          )
+                        ),
+                      ),
+                      Container( //Nombre Piloto
+                        width: 170,
+                        height: 70,
+                        alignment: Alignment.center,
+                        child: Text("${datos.nombrePiloto[i]} ${datos.piloto[i]}".toUpperCase(), textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),)
+                      ),
+                      Container( //Imagen Equipo
+                        width: 50,
+                        height: 50,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image:  AssetImage('images/LogoEquipos/${datos.imagenEquipo[i]}.png') 
+                          )
+                        ),
+                      ),
+                    ]
+                  ),
+                ),
+                ) 
+            ],
+          ),
+          )
+       ),
       );
          
  }
