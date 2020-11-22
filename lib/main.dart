@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:proyecto/pages/contactPage.dart';
-import 'package:proyecto/pages/eventPage.dart';
+import 'package:proyecto/pages/equipoPage.dart';
 import 'package:proyecto/pages/homePage.dart';
 import 'package:proyecto/pages/notificationPage.dart';
 import 'package:proyecto/pages/pilotoPage.dart';
@@ -37,7 +37,7 @@ class MaterialAppWithTheme extends StatelessWidget {
      routes:  {
        pageRoutes.home: (context) => homePage(),
        pageRoutes.contact: (context) => contactPage(),
-       pageRoutes.event: (context) => eventPage(),
+       pageRoutes.equipo: (context) => equipoPage(),
        pageRoutes.piloto: (context) => pilotoPage(),
        pageRoutes.notification: (context) => notificationPage(),
      },

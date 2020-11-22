@@ -3,9 +3,9 @@ import 'package:proyecto/model/modelo.dart';
 
 import '../navigationDrawer.dart';
 
-class eventPage extends StatelessWidget {
+class equipoPage extends StatelessWidget {
  final Piloto datos = new Piloto();
- static const String routeName = '/eventPage';
+ static const String routeName = '/equipoPage';
 
  @override
  Widget build(BuildContext context) {
@@ -33,7 +33,7 @@ class eventPage extends StatelessWidget {
                   
                   child: Row(
                     children: <Widget>[
-                      Container( //Numero Piloto
+                      Container( //Imagen Coche
                         margin: EdgeInsets.only(left: 20.0),
                         width: 120,
                         height: 40,
@@ -44,8 +44,8 @@ class eventPage extends StatelessWidget {
                           )
                         ),
                       ),
-                      Container( //Nombre Piloto
-                        width: 170,
+                      Container( //Nombre Equipo
+                        width: 162,
                         height: 60,
                         alignment: Alignment.center,
                         child: Text("${datos.nombreEquipo[i]}".toUpperCase(), textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),)

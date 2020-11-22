@@ -102,6 +102,8 @@ flutter:
     - images/LogoEquipos/logoalfaromeo.png
     - images/LogoEquipos/logohaas.png
     - images/LogoEquipos/logowilliams.png
+    #Logo Equipos
+    - images/LogoEquipos/logoenteromercedes.jpg
     #Imagen Coche
     - images/Equipos/mercedes.png
     - images/Equipos/ferrari.png

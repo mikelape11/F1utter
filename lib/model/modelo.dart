@@ -17,7 +17,7 @@ class Piloto{
   
   //LINEARGRADIENT
   List<Color>color1 = [Colors.teal, Colors.teal, Colors.red[900], Colors.red[900], Colors.blue[900], Colors.blue[900], Colors.orange, Colors.orange, Colors.yellowAccent[700], Colors.yellowAccent[700], Colors.blueGrey[600], Colors.blueGrey[600], Colors.pink, Colors.pink, Colors.redAccent[700], Colors.redAccent[700], Colors.grey, Colors.grey, Colors.blue, Colors.blue];
-  List<Color>color2 = [Colors.teal[100], Colors.teal[100], Colors.red[100], Colors.red[100], Colors.blue[100], Colors.blue[100], Colors.orange[100], Colors.orange[100], Colors.yellowAccent[100], Colors.yellowAccent[100], Colors.blueGrey[100], Colors.blueGrey[100], Colors.pink[100], Colors.pink[100], Colors.redAccent[100], Colors.redAccent[100], Colors.grey[100], Colors.grey[100], Colors.blue[100], Colors.blue[100]];
+  List<Color>color2 = [Colors.teal[100], Colors.teal[100], Colors.red[200], Colors.red[200], Colors.blue, Colors.blue, Colors.orange[200], Colors.orange[200], Colors.yellowAccent[400], Colors.yellowAccent[400], Colors.blueGrey[100], Colors.blueGrey[100], Colors.pink[100], Colors.pink[100], Colors.redAccent[100], Colors.redAccent[100], Colors.grey[300], Colors.grey[300], Colors.blue[300], Colors.blue[300]];
 
   
   Piloto();

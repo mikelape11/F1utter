@@ -32,7 +32,7 @@ class navigationDrawer extends StatelessWidget {
            icon: Icons.directions_car,
            text: 'Equipos',
            onTap: () =>
-               Navigator.pushReplacementNamed(context, pageRoutes.event),
+               Navigator.pushReplacementNamed(context, pageRoutes.equipo),
          ),
          //Divider(),
          createDrawerBodyItem(
