@@ -115,6 +115,8 @@ flutter:
     - images/Equipos/alfaromeo.png
     - images/Equipos/haas.png
     - images/Equipos/williams.png
+    #Cascos
+    - images/Pilotos/Cascos/hamilton.png
     
     
   #   - images/a_dot_ham.jpeg

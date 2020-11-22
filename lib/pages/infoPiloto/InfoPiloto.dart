@@ -23,20 +23,87 @@ class InfoPilotoPage extends State<InfoPiloto>{
   int _selectedIndex = 0;
   static const TextStyle optionStyle = TextStyle(fontSize: 16, fontWeight: FontWeight.normal);
   List<Widget> _widgetOptions() => [
-    Container(
-      padding: EdgeInsets.all(10),
-      child: Text(
-        'Estadisticas',
-        style: optionStyle,
+    Center(
+      child: Container(
+        padding: EdgeInsets.all(10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: <Widget>[
+            Container(
+              height: 280,
+              width: MediaQuery.of(context).size.width,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 280,
+                    width: MediaQuery.of(context).size.width/2.3,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("Pais".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("Podios".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("Puntos".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("GPs".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("WC".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("Wins".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("Fecha Nac".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                      ],
+                    ),
+                  ),
+                  Container(
+                   height: 280,
+                    width: MediaQuery.of(context).size.width/2,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("Gran Bretaña".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("150".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("3000".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("250".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("7".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("94".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                        Divider(),
+                        Text("1985/02/08".toUpperCase(), style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),),
+                      ],
+                    ),
+                  ),
+                ]
+              ),
+            ),
+            Container(
+              height: 120,
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('images/Pilotos/Cascos/hamilton.png')
+                )
+              ),
+            ), 
+          ],
+        )
       ),
     ),
-    Container(
-      padding: EdgeInsets.all(25),
-      child: Text(
-        '${widget.biografiaPiloto}',
-        style: optionStyle,
+    Center(
+      child: Container(
+        padding: EdgeInsets.all(25),
+        child: Text(
+          '${widget.biografiaPiloto}',
+          style: optionStyle,
+        ),
       ),
-    ),
+    )
   ];
 
   void _onItemTapped(int index) {
